@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom right, #FFA500, #FFD700);
+    /* color: #222; */
+}
+
+/* header section*/
+
+header {
+    background: #ff8800;
+    padding: 2rem 1rem;
+    text-align: center;
+
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+
+
+header h1 {
+    font-size: 2em;
+    position: relative;
+    color: #fdfdfd;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+
+header p {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255);
+    opacity: 0.8;
+}
+
+/* header section*/
+
+
+
+/* Navigation section*/
+
+nav {
+    background: #ff9900;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Navigation section*/
+
+
+
+/* about section*/
+
+section {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 0px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+section h2 {
+    color: #ff6600;
+}
+
+
+.about-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1.5rem;
+    background-color: #ff6600;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* about section*/
+
+
+
+/*presale section*/
+
+#presale-tab{
+    background: #ff8800;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-top: 1rem;
+
+    border-radius: 0px;
+}
+
+h1 {
+    color: white;
+}
+
+#presale-tab p {
+    color: rgb(255, 255, 255);
+    opacity: 0.9;
+    margin-top: 0.5rem;
+}
+
+input, button {
+    margin: 10px;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 240px;
+}
+
+#presale-btn {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input, button:hover {
+    transform: scale(105%);
+    transition : all 0.3s ease-in-out
+}
+
+#status {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/*presale section*/
+
+
+
+/*tokenomics section*/
+
+#tokenomics h2 {
+    margin-bottom: 5px;
+}
+
+#tokenomics p {
+    margin-bottom: 10px;
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+}
+
+
+#tokenomics ul {
+    margin-top: 0.5rem;
+    opacity: 0.9;
+    list-style: none;
+}
+
+/*tokenomics section*/
+
+
+
+
+
+/* footer section*/
+
+#join h2 {
+    margin-bottom: 0.5rem;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: #222;
+    color: white;
+    margin-top: 3rem;
+}
+.button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1.5rem;
+    background-color: #ff6600;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.impact-cards {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.card {
+    flex: 1 1 300px;
+    background: #fff7e6;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.card h3 {
+    color: #e67300;
+}
+.card img {
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+}
+
+/* footer section*/

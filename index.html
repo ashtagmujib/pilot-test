@@ -4,139 +4,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Charitok ($TOK) – We Meme, We Eat</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to bottom right, #FFA500, #FFD700);
-      color: #222;
-    }
-    header {
-      background: #ff8800;
-      color: white;
-      padding: 2rem 1rem;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 3em;
-    }
-    header p {
-      margin-top: 0.5rem;
-      font-size: 1.2rem;
-    }
-    nav {
-      background: #ff9900;
-      padding: 0.5rem;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      margin: 0 1rem;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    section {
-      padding: 2rem;
-      max-width: 1000px;
-      margin: auto;
-      background: rgba(255, 255, 255, 0.85);
-      border-radius: 10px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.1);
-      margin-top: 2rem;
-    }
-    section h2 {
-      color: #ff6600;
-    }
-    section img {
-      max-width: 100%;
-      height: auto;
-      margin: 1rem 0;
-      border-radius: 10px;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background: #222;
-      color: white;
-      margin-top: 3rem;
-    }
-    .button {
-      display: inline-block;
-      margin-top: 1rem;
-      padding: 0.75rem 1.5rem;
-      background-color: #ff6600;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      border-radius: 5px;
-    }
-    .impact-cards {
-      display: flex;
-      gap: 2rem;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-top: 2rem;
-    }
-    .card {
-      flex: 1 1 300px;
-      background: #fff7e6;
-      padding: 1rem;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-    .card h3 {
-      color: #e67300;
-    }
-    .card img {
-      border-radius: 10px;
-      margin-bottom: 0.5rem;
-    }
-  </style>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
   <header>
     <h1>Charitok ($TOK)</h1>
-    <p>We Meme. We Eat. Crypto with a cause.</p>
+    <p>We Meme. We Eat...</p>
   </header>
 
   <nav>
     <a href="#about">About</a>
-    <a href="#impact">Impact</a>
     <a href="#tokenomics">Tokenomics</a>
     <a href="#join">Join Us</a>
   </nav>
 
   <section id="about">
     <h2>What is Charitok?</h2>
-    <p><strong>Charitok ($TOK)</strong> is the world’s first meme coin that turns every transaction into real-world help for underprivileged communities in Nigeria and beyond. From food and water to education and rent — we use crypto chaos to create real change.</p>
-    <img src="https://cdn.openai.com/chat-assets/project-placeholder.png" alt="Charitok Coin Mascot">
-    <a class="button" href="#join">Get Involved</a>
+    <br>
+    <p>
+      <strong>Charitok ($TOK)</strong> is the world’s first meme coin that turns
+      every transaction into real-world help for underprivileged 
+      communities. From food and water to education and rent, we use 
+      crypto chaos to create real change.
+
+      <br><br>
+      we are on a mission to trun the potential profits from the 
+      chaos of the crypto space into something that benefits 
+      underdeveloped and underprivileged people and communities
+    </p>
+    <a class="about-btn" href="#presale-tab"> Get Involved </a>
   </section>
 
-  <section id="impact">
-    <h2>Real Impact</h2>
-    <p>We meme, but we also feed. Every month, we post transparent reports and photos showing what your transactions helped fund — directly, locally, and publicly.</p>
-    <div class="impact-cards">
-      <div class="card">
-        <img src="https://cdn.openai.com/chat-assets/project-placeholder.png" alt="Food Packs">
-        <h3>Food Packs</h3>
-        <p>Over 100+ families fed in our first month.</p>
-      </div>
-      <div class="card">
-        <img src="https://cdn.openai.com/chat-assets/project-placeholder.png" alt="School Fees">
-        <h3>School Fees</h3>
-        <p>Dozens of kids back in school — paid through $TOK.</p>
-      </div>
-      <div class="card">
-        <img src="https://cdn.openai.com/chat-assets/project-placeholder.png" alt="Borehole">
-        <h3>Clean Water</h3>
-        <p>Community boreholes drilled using on-chain donations.</p>
-      </div>
-    </div>
+
+  <section id="presale-tab">
+    <h1> charitok Presale </h1>
+    <p>Buy $TOK by sending sol directly to our presale address</p>
+
+    <button id="presale-btn" onclick="connectWallet()">🔌 Connect Wallet</button><br>
+    <div id="wallet-address"></div>
+
+    <input type="number" id="ethAmount" placeholder="Enter amount"><br>
+    <button onclick="sendETH()">🚀 Send sol</button>
+
+    <div id="status"></div>
   </section>
+
 
   <section id="tokenomics">
     <h2>How It Works</h2>
@@ -152,13 +65,17 @@
 
   <section id="join">
     <h2>Join The Movement</h2>
-    <p>Follow us, hold $TOK, and become part of something bigger. Crypto doesn't have to be senseless — let's make it soulful.</p>
+    <p>Follow us, Join the cpmmunity, hold $TOK, and become part of something bigger. Crypto doesn't have to be senseless...let's make it soulful.</p>
     <a class="button" href="#">Follow us on X</a>
   </section>
 
   <footer>
-    &copy; 2025 Charitok. Built with memes and purpose.
+    &copy; 2025 Charitok. <br> Built with memes and purpose.
   </footer>
+
+  
+
+  <script src="./script.js"></script>
 
 </body>
 </html>
