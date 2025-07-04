@@ -1,36 +1,45 @@
 const info = document.querySelector('.info');
 const infoTab = document.querySelector('.info-tab')
-const closeinfo = document.getElementById('close-info')
+const closeinfo = document.getElementById('close-info');
+
+
+const navList = document.querySelector('.listItem');
+const navTab = document.querySelector('.navTab')
+ 
 
 info.addEventListener('click', e=> {
 
   infoTab.style.display = 'block';
-  // container.style.height = '100vh';
-  // container.style.overflowY = 'hidden';
-
+  
   setTimeout(() => {
-      infoTab.classList.add('active');
-      infoTab.classList.remove('closed');
+    infoTab.classList.add('active');
+    infoTab.classList.remove('closed');
   }, 1)
 
-  // setTimeout(() => {
-  //     blur.style.display = 'block';
-  // }, 500)
-
-  instructionIcon.classList.add('opened');
 })
+
 
 closeinfo.addEventListener('click', e=> {
-    
-  infoTab.classList.remove('active');
-  infoTab.classList.add('closed');
 
-    // blur.style.display = 'none';
-  instructionIcon.classList.remove('opened');
-    // container.style.overflowY = 'auto';
+  setTimeout(() => {
+    infoTab.classList.remove('active');
+    infoTab.classList.add('closed');
+  }, 1)
+
 
 })
 
+
+navTab.addEventListener('click', e=> {
+
+  if(e.target.classList = navList) {
+  
+    infoTab.classList.remove('active');
+    infoTab.classList.add('closed');
+  
+  }
+   
+})
 
 
 
