@@ -15,6 +15,7 @@ body {
 
 .container {
     width: 100vw;
+    height: auto;
     min-width: 300px;
     max-width: 1440px;
     margin: auto;
@@ -22,7 +23,7 @@ body {
 
 .container.active {
     height: 100vh;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
 
@@ -322,6 +323,12 @@ header p {
     margin: 3em 0 1em;
 }
 
+.about-dts p {
+    color: black;
+    text-align: left;
+    font-size: 0.7em;
+}
+
 
 .about-btn {
     display: inline-block;
@@ -424,10 +431,25 @@ button {
     margin-top: 2rem;
 }
 
-.info-box ul {
-    list-style: none;
+.info-box p {
+    color: black;
+    text-align: left;
+    font-size: 0.7em;
+    margin-top: 10px;
 }
 
+.info-box ul {
+    list-style: none;
+    font-size: 0.7em;
+}
+
+.info-box ul li{
+  padding: 10px;
+}
+
+.info-box ul li:first-of-type{
+  margin-top: 10px;
+}
 
 .address-box {
     background: #fff;
@@ -493,7 +515,7 @@ button {
 #tokenomics p {
     margin-bottom: 10px;
     margin-top: 0.5rem;
-    font-size: 1.2rem;
+    font-size: 0.7rem;
 }
 
 
@@ -501,6 +523,14 @@ button {
     margin-top: 0.5rem;
     opacity: 0.9;
     list-style: none;
+    font-size: 0.7rem;
+}
+
+#tokenomics ul li {
+    padding: 10px;
+    background:linear-gradient(to bottom right, #FF8800, #FFD700);
+    border-radius: 10px;
+    margin-top: 10px;
 }
 
 /*tokenomics section*/
@@ -515,8 +545,14 @@ button {
 }
 
 #join h2 {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
+
+#join p {
+    margin-bottom: 0.5rem;
+    font-size: 0.7rem;
+}
+
 
 footer {
     text-align: center;
@@ -536,27 +572,5 @@ footer {
     border-radius: 5px;
 }
 
-.impact-cards {
-    display: flex;
-    gap: 2rem;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 2rem;
-}
-.card {
-    flex: 1 1 300px;
-    background: #fff7e6;
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    text-align: center;
-}
-.card h3 {
-    color: #e67300;
-}
-.card img {
-    border-radius: 10px;
-    margin-bottom: 0.5rem;
-}
 
 /* footer section*/
