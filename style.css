@@ -20,6 +20,11 @@ body {
     margin: auto;
 }
 
+.container.active {
+    height: 100vh;
+    overflow-y: hidden;
+}
+
 
 /* header section*/
 
@@ -187,6 +192,7 @@ header p {
     height: 20px;
     border-radius: 50%;
     float: right;
+    margin-top: 20px;
 
     font-size: 2rem;
     color: #fff;
@@ -310,7 +316,7 @@ header p {
     height: auto;
 }
 
-section h2 {
+.about-dts h2 {
     color: black;
     text-align: left;
     margin: 3em 0 1em;
@@ -355,18 +361,43 @@ section h2 {
 /*presale section*/
 
 .presale-tab {
-    max-width: 600px;
+    width: 100%;
     background: #fff;
-    padding: 0 2rem;
-    
-    /* box-shadow: 0 0 15px rgba(0,0,0,0.1); */
+    padding: 2rem;
     margin-bottom: 30px;
+
+    display: flex;
+    gap: 3rem;
 }
+
+
+.sect1, .sect2 {
+    width:50%;
+    position: relative;
+}
+
+
+.connect-wallet-tab {
+    width: 100%;
+    height: auto;
+
+    background:linear-gradient(to bottom right, #FF8800, #FFD700);
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.connect-wallet-tab h2 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
 
 label {
     display: block;
-    margin: 1rem 0 0.5rem;
+    margin: 2rem 0 0;
 }
+
 
 input {
     width: 100%;
@@ -374,10 +405,11 @@ input {
     border-radius: 5px;
     border: 1px solid #ccc;
     outline: none;
+    margin: 1rem 0;
 }
 
 button {
-    background: linear-gradient(to bottom right, #FF8800, #FFD700);
+    background: black;
     color: white;
     padding: 0.75rem 1.5rem;
     border: none;
@@ -395,20 +427,47 @@ button {
 .info-box ul {
     list-style: none;
 }
+
+
 .address-box {
     background: #fff;
-    border: 1px dashed #ff9900;
+    border: 2px dashed #ff9900;
     padding: 1rem;
     word-break: break-word;
     text-align: center;
     border-radius: 5px;
-    margin-top: 0.5rem;
+    margin-top: 2rem;
+
+    animation: anim4 3s infinite;
 }
 
-.progress-bar {
-    padding:1rem;
+@keyframes anim4 {
+    
+    0%{
+        border-color: #FF8800; 
+    }
+    
+    50% {
+        border-color: #FFD700;
+    }
+    
+    100% {
+        border-color: black;
+    }
+    
 }
 
+
+
+@media (max-width:480px) {
+    .presale-tab {
+        display: block;
+    }
+
+    .sect1, .sect2 {
+        width: 100%;
+    }
+}
 /*presale section*/
 
 
@@ -423,7 +482,7 @@ button {
 
 /*tokenomics section*/
 #tokenomics {
-    padding: 0 2rem;
+    padding: 2rem;
 }
 
 

@@ -1,15 +1,18 @@
-const info = document.querySelector('.info');
-const infoTab = document.querySelector('.info-tab')
-const closeinfo = document.getElementById('close-info');
+const 
+  info = document.querySelector('.info'),
+  infoTab = document.querySelector('.info-tab'),
+  closeinfo = document.getElementById('close-info'),
+  navList = document.querySelector('.listItem'),
+  navTab = document.querySelector('.navTab'),
+  container = document.querySelector('.container')
 
+;
 
-const navList = document.querySelector('.listItem');
-const navTab = document.querySelector('.navTab')
- 
 
 info.addEventListener('click', e=> {
 
   infoTab.style.display = 'block';
+  container.classList.add('active');
   
   setTimeout(() => {
     infoTab.classList.add('active');
@@ -20,6 +23,8 @@ info.addEventListener('click', e=> {
 
 
 closeinfo.addEventListener('click', e=> {
+
+  container.classList.remove('active');
 
   setTimeout(() => {
     infoTab.classList.remove('active');
@@ -33,14 +38,14 @@ closeinfo.addEventListener('click', e=> {
 navTab.addEventListener('click', e=> {
 
   if(e.target.classList = navList) {
-  
+
+    container.classList.remove('active');
     infoTab.classList.remove('active');
     infoTab.classList.add('closed');
   
   }
    
 })
-
 
 
 
